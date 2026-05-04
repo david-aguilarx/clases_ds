@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Gaming y Programacion</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h2>INTRODUCCION A GIT</h2>
-    <h1>eEsto es una practica DS</h1>
+
+  <header>
+    <h1>Gaming y Programacion</h1>
+    <p>Aprende a crear videojuegos con codigo</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#lenguajes">Lenguajes</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+
+    <section id="inicio">
+      <h2>¿Que es el desarrollo de videojuegos?</h2>
+      <p>Es crear videojuegos usando programacion. Necesitas aprender un lenguaje de codigo y usar un motor de juegos.</p>
+    </section>
+
+    <section id="lenguajes">
+      <h2>Lenguajes populares</h2>
+      <ul>
+        <li>Python - facil para principiantes</li>
+        <li>JavaScript - para juegos en el navegador</li>
+        <li>C# - se usa en Unity</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label>Nombre: <input type="text" name="nombre"></label><br><br>
+        <label>Email: <input type="email" name="email"></label><br><br>
+        <label>Mensaje:<br><textarea name="mensaje" rows="3"></textarea></label><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>David Aguilar - Kodigo Bootcamp</p>
+  </footer>
+
 </body>
 </html>
