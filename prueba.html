@@ -6,48 +6,98 @@
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-
-  <header>
+<header>
     <h1>Gaming y Programacion</h1>
-    <p>Aprende a crear videojuegos con codigo</p>
+    <p>Aprende a crear tus propios videojuegos con codigo</p>
   </header>
-
+ 
   <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#lenguajes">Lenguajes</a>
-    <a href="#contacto">Contacto</a>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#lenguajes">Lenguajes</a></li>
+      <li><a href="#motores">Motores</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </nav>
-
+ 
   <main>
-
+ 
     <section id="inicio">
       <h2>¿Que es el desarrollo de videojuegos?</h2>
-      <p>Es crear videojuegos usando programacion. Necesitas aprender un lenguaje de codigo y usar un motor de juegos.</p>
+      <p>Es el proceso de crear videojuegos usando programacion, diseño y sonido. Con codigo puedes controlar personajes, escenarios y reglas del juego.</p>
+     <img src="https://picsum.photos/seed/school/300/200" 
+     alt="Imagen representativa del mundo del gaming y la programacion" 
+     width="300">
     </section>
-
+ 
     <section id="lenguajes">
-      <h2>Lenguajes populares</h2>
+      <h2>Lenguajes populares para crear juegos</h2>
+ 
+      <article>
+        <h3>Python</h3>
+        <p>Es el lenguaje mas facil para empezar. Se puede usar con la libreria Pygame para crear juegos 2D sencillos.</p>
+      </article>
+ 
+      <article>
+        <h3>JavaScript</h3>
+        <p>Permite crear juegos que corren directamente en el navegador. No necesitas instalar nada extra.</p>
+      </article>
+ 
+      <article>
+        <h3>C#</h3>
+        <p>Es el lenguaje que usa Unity, uno de los motores de juegos mas populares del mundo.</p>
+      </article>
+    </section>
+ 
+    <section id="motores">
+      <h2>Motores de videojuegos</h2>
+      <p>Un motor de juegos es un programa que te ayuda a construir juegos sin programar todo desde cero.</p>
       <ul>
-        <li>Python - facil para principiantes</li>
-        <li>JavaScript - para juegos en el navegador</li>
-        <li>C# - se usa en Unity</li>
+        <li><strong>Unity</strong> - usa C#, muy popular para juegos 2D y 3D</li>
+        <li><strong>Godot</strong> - gratuito y facil de aprender</li>
+        <li><strong>Unreal Engine</strong> - para juegos con graficos avanzados</li>
       </ul>
     </section>
-
+ 
     <section id="contacto">
-      <h2>Contacto</h2>
+      <h2>Formulario de Contacto</h2>
       <form>
-        <label>Nombre: <input type="text" name="nombre"></label><br><br>
-        <label>Email: <input type="email" name="email"></label><br><br>
-        <label>Mensaje:<br><textarea name="mensaje" rows="3"></textarea></label><br><br>
-        <button type="submit">Enviar</button>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+ 
+        <label for="email">Correo electronico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+ 
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" required><br><br>
+ 
+        <label for="tema">Tema de interes:</label><br>
+        <select id="tema" name="tema" required>
+          <option value="">Selecciona uno</option>
+          <option value="python">Python</option>
+          <option value="unity">Unity</option>
+          <option value="godot">Godot</option>
+        </select><br><br>
+ 
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+ 
+        <button type="submit">Enviar mensaje</button>
       </form>
     </section>
-
+ 
   </main>
-
+ 
+  <aside>
+    <h3>💡 Dato curioso</h3>
+    <p>El primer videojuego de la historia fue creado en 1958. Se llamaba "Tennis for Two" y fue programado por un fisico llamado William Higinbotham.</p>
+    <h3>📚 Kodigo</h3>
+    <p>Si quieres empezar, busca ayuda en la plataforma Kodigo, coach Kenia es la mejor instructora.</p>
+  </aside>
+ 
   <footer>
-    <p>David Aguilar - Kodigo Bootcamp</p>
+    <p>David Contreras - Pagina sobre Gaming y Programacion</p>
+    <p>Hecha con HTML5 y CSS3</p>
   </footer>
 
 </body>
